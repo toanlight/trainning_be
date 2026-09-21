@@ -1,0 +1,106 @@
+## ============================================================
+## .gitignore cho .NET 8 Clean Architecture Project
+## ============================================================
+
+# -----------------------------------------------
+# Build outputs
+# -----------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# -----------------------------------------------
+# Visual Studio / Rider
+# -----------------------------------------------
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# -----------------------------------------------
+# NuGet
+# -----------------------------------------------
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# -----------------------------------------------
+# Entity Framework Core Migrations (optional)
+# Bỏ comment dòng dưới nếu không muốn commit migrations
+# -----------------------------------------------
+# **/Migrations/
+
+# -----------------------------------------------
+# .NET runtime / SDK
+# -----------------------------------------------
+*.dll
+*.exe
+*.pdb
+*.cache
+*.tmp
+
+# -----------------------------------------------
+# ASP.NET Core
+# -----------------------------------------------
+# Secrets & sensitive config — KHÔNG bao giờ commit!
+**/appsettings.Production.json
+**/appsettings.Local.json
+*secrets*.json
+*.pfx
+*.p12
+
+# -----------------------------------------------
+# Test results
+# -----------------------------------------------
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coveragexml
+coverage*/
+TestResults/
+
+# -----------------------------------------------
+# Publish output
+# -----------------------------------------------
+publish/
+**/publish/
+
+# -----------------------------------------------
+# Docker
+# -----------------------------------------------
+.dockerignore
+
+# -----------------------------------------------
+# OS generated files
+# -----------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# -----------------------------------------------
+# Environment & secrets
+# -----------------------------------------------
+.env
+.env.*
+*.env
+
+# -----------------------------------------------
+# Rider / JetBrains
+# -----------------------------------------------
+.idea/
+*.sln.iml
